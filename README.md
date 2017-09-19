@@ -17,7 +17,6 @@ The LED I use was Common Cathode, Diffused, 8mm. I wired (I believe...) the Red 
 Once you have assembled the hardware you should verify that the microphone and speaker works. I had plenty of problems here and spent a lot of time troubleshooting. Here is what I had to do:
 
 1) Disable some modules in the Ubuntu Linux by adding a /etc/modprobe.d/tjbot-blacklist-snd.conf with the following content:
-
 blacklist snd_bcm2835
 blacklist snd_pcm
 blacklist snd_timer
@@ -82,14 +81,14 @@ In Node-RED import the NodeRED_flow.json file.
 Then in the Node-RED flow update the following with your own credentials:
 
 Main flow:
-* Update Conversation node with your credentials (username/password) and your Conversation workspace id. Ensure “Save context" remains checked.
+* Update Conversation node with your credentials (username/password) and your Conversation workspace id. Ensure â€œSave context" remains checked.
 
 Bus subflow:
-Go to Västtrafik’s API portal and sign up and register your application - https://developer.vasttrafik.se/portal/
+Go to VÃ¤sttrafikâ€™s API portal and sign up and register your application - https://developer.vasttrafik.se/portal/
 
 Then in the Bus subflow open the Get Token HTTP request component
 * Enable basic authentication
-* Add your Västtrafik userid/password
+* Add your VÃ¤sttrafik userid/password
 
 Weather subflow:
 In the Get Token HTTP request component:
