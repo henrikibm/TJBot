@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/Development/libraries/apache-httpcomponents-client/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Development/libraries/apache-httpcomponents-client/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/Development/libraries/apache-httpcomponents-client/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="D:/Development/libraries/watson/watson-java-sdk-3.5.3-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="D:/Development/libraries/pi4j/lib/pi4j-core.jar"/>
+	<classpathentry kind="lib" path="D:/Development/libraries/pi4j/lib/pi4j-device.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
