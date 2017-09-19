@@ -71,7 +71,7 @@ To get started with my version of TJBot you first need to build a standard TJBot
 Then you need to setup the following four services on Bluemix:
 - Watson Conversation
 - Watson Speech To Text
- -Watson Test To Speech
+- Watson Text To Speech
 - Weather Company Data
 
 You also need to create a Node-RED instance to hold the Node-RED flow (create a Node-RED starter on Bluemix).
@@ -99,9 +99,9 @@ In the Get Token HTTP request component:
 
 I use Eclipse to build the Java code, which runs *on* the TJBot. It requires the following external libraries that need to be added to the classpath and buildpath:
 
-Apache HTTP Components (for making outbound HTTP requests) - https://hc.apache.org/downloads.cgi
-Pi4J (for communicating with the GPIO and drive LEDs)- http://pi4j.com/download.html
-Watson Java SDK - https://github.com/watson-developer-cloud/java-sdk/releases
+- Apache HTTP Components (for making outbound HTTP requests) - https://hc.apache.org/downloads.cgi
+- Pi4J (for communicating with the GPIO and drive LEDs)- http://pi4j.com/download.html
+- Watson Java SDK - https://github.com/watson-developer-cloud/java-sdk/releases
 
 Check the .classpath for the exact filenames and versions that I have used in case you run into any issues.
 
