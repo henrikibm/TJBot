@@ -17,14 +17,11 @@ The LED I use was Common Cathode, Diffused, 8mm. I wired (I believe...) the Red 
 Once you have assembled the hardware you should verify that the microphone and speaker works. I had plenty of problems here and spent a lot of time troubleshooting. Here is what I had to do:
 
 1) Disable some modules in the Ubuntu Linux by adding a /etc/modprobe.d/tjbot-blacklist-snd.conf with the following content:
+
 blacklist snd_bcm2835
-
 blacklist snd_pcm
-
 blacklist snd_timer
-
 blacklist snd_pcsp
-
 blacklist snd
 
 Reboot and log in again
@@ -32,11 +29,9 @@ Reboot and log in again
 2) Check what  sudo cat /proc/asound/cards  returns. On my hardware it says:
 
  0 [Device         ]: USB-Audio - USB2.0 Device
- 
                       Generic USB2.0 Device at usb-3f980000.usb-1.3, full speed
  
  1 [AK5371         ]: USB-Audio - AK5371
- 
                       AKM AK5371 at usb-3f980000.usb-1.2, full speed
 
 
