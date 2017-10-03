@@ -14,6 +14,8 @@ Secondly, I use a different type of LED that I ordered from www.ebay.co.uk/itm/R
 
 The LED I use was Common Cathode, Diffused, 8mm. I wired (I believe...) the Red pin to Raspberry Pi's GPIO 3, Green to GPIO 2 and Blue to GPIO 0, and common cathode to Raspberry Pi's ground. You can use different wiring as long as you change the configuration in the Java client.
 
+Note: As this is a traditional LED you should add a 330ohm resistor in series with each of the R, G, B inputs. This is necessary to give a proper current when connected to 5 volt. So head off to your local electronics shop and pick up three small 330 ohm resistors, then solder them to each of the R, B, G legs.
+
 Once you have assembled the hardware you should verify that the microphone and speaker works. I had plenty of problems here and spent a lot of time troubleshooting. Here is what I had to do:
 
 1) Disable some modules in the Ubuntu Linux by adding a /etc/modprobe.d/tjbot-blacklist-snd.conf with the following content:
